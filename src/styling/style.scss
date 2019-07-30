@@ -1,0 +1,35 @@
+$primary: #2ab759;
+$background: #181818;
+$black: #121212;
+$lightBlack: #282828;
+$bgInput: #a0a0a0;
+
+$gradient: linear-gradient(45deg, #181818 30%, #3c3c3c 130%);
+$gradientFilter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#181818', endColorstr='#3c3c3c',GradientType=1 );
+
+
+
+
+
+body {
+    color: $bgInput;
+    font-family: 'Montserrat', sans-serif;
+    background: $gradient;
+    filter: $gradientFilter;
+    min-height: 100vh;
+    height: 100%;
+
+    #root {
+        margin: -7px;
+
+        #main-sidebar {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 230px;
+            height: 100vh;
+            padding: 20px;
+            background: $black;
+        }
+    }
+}
